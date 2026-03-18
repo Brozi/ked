@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="schema">
+        <complexType>
+            <sequence>
+                <element name="element">
+                    <complexType>
+                        <attribute name="name" type="string"/>
+                        <attribute name="type" type="string"/>
+                    </complexType>
+                </element>
+            </sequence>
+            <attribute name="xmlns" type="anyURI"/>
+        </complexType>
+    </element>
+</schema>

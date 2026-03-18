@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="attrName">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="jakiś tekst"/>
+            <xs:enumeration value="jakiś inny tekst"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="myTimeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-2][0-9]:[0-5][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="myEnumerationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ćwiczenia"/>
+            <xs:enumeration value="wykład"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="classType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="type" type="myEnumerationType"/>
+            <xs:element name="major" type="xs:string"/>
+            <xs:element name="semester" type="xs:positiveInteger"/>
+            <xs:element name="group" type="xs:positiveInteger"/>
+            <xs:element name="start_hour" type="myTimeType"/>
+            <xs:element name="end_hour" type="myTimeType"/>
+            <xs:element name="room" type="xs:decimal"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:positiveInteger" default="true"/>
+        <xs:attribute name="special" type="xs:boolean"/>
+    </xs:complexType>
+    <xs:element name="timetable">
+        <xs:complexType>
+            <xs:sequence minOccurs="4" maxOccurs="5">
+                <xs:choice>
+                    <xs:element name="class" type="classType"/>
+                    <xs:element name="info">
+                        <xs:complexType>
+                            <xs:attribute name="a" type="attrName"/>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

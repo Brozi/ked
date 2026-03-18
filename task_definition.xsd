@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="vehicleType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="bicycle"/>
+            <xs:enumeration value="car"/>
+            <xs:enumeration value="tram"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="directionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="east"/>
+            <xs:enumeration value="west"/>
+            <xs:enumeration value="south"/>
+            <xs:enumeration value="north"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="eventType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="driving_forward"/>
+            <xs:enumeration value="driving_backward"/>
+            <xs:enumeration value="turning_right"/>
+            <xs:enumeration value="turning_left"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="objectType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="road"/>
+            <xs:enumeration value="rail_track"/>
+            <xs:enumeration value="building"/>
+            <xs:enumeration value="crossroad"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="accident">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="staticObjects">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="2" maxOccurs="10">
+                            <xs:element name="object">
+                                <xs:complexType>
+                                    <xs:attribute name="kind" type="objectType"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="dynamicObjects">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="2" maxOccurs="10">
+                            <xs:choice>
+                                <xs:element name="vehicle">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="eventChain">
+                                                <xs:complexType>
+                                                    <xs:sequence maxOccurs="10">
+                                                        <xs:element name="event">
+                                                            <xs:complexType>
+                                                                <xs:attribute name="kind" type="eventType"/>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute name="id" type="xs:positiveInteger"/>
+                                        <xs:attribute name="kind" type="vehicleType"/>
+                                        <xs:attribute name="initDirection" type="directionType"/>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="pedestrian">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="eventChain">
+                                                <xs:complexType>
+                                                    <xs:sequence maxOccurs="10">
+                                                        <xs:element name="event">
+                                                            <xs:complexType>
+                                                                <xs:attribute name="kind" type="eventType"/>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="collisions">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="2" maxOccurs="10">
+                            <xs:element name="collision">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="actor">
+                                            <xs:complexType>
+                                                <xs:attribute name="id" type="xs:positiveInteger"/>
+                                                <xs:attribute name="side" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="victim">
+                                            <xs:complexType>
+                                                <xs:attribute name="id" type="xs:positiveInteger"/>
+                                                <xs:attribute name="side" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="coordinates">
+                                            <xs:complexType>
+                                                <xs:attribute name="x" type="xs:decimal"/>
+                                                <xs:attribute name="y" type="xs:decimal"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<data>
+	<row id="0">
+		<date>1966-01-01</date>
+		<temperature>3.0</temperature>
+		<quality>1</quality>
+	</row>
+	<row id="1">
+		<date>1966-01-02</date>
+		<temperature>4.9</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="2">
+		<date>1966-01-03</date>
+		<temperature>4.5</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="3">
+		<date>1966-01-04</date>
+		<temperature>-0.3</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="4">
+		<date>1966-01-05</date>
+		<temperature>-6.7</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="5">
+		<date>1966-01-06</date>
+		<temperature>-7.4</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="6">
+		<date>1966-01-07</date>
+		<temperature>-6.0</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="7">
+		<date>1966-01-08</date>
+		<temperature>-8.4</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="8">
+		<date>1966-01-09</date>
+		<temperature>-9.2</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="9">
+		<date>1966-01-10</date>
+		<temperature>-8.4</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="10">
+		<date>1966-01-11</date>
+		<temperature>-8.9</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="11">
+		<date>1966-01-12</date>
+		<temperature>-8.8</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="12">
+		<date>1966-01-13</date>
+		<temperature>-6.4</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="13">
+		<date>1966-01-14</date>
+		<temperature>-5.9</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="14">
+		<date>1966-01-15</date>
+		<temperature>-7.2</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="15">
+		<date>1966-01-16</date>
+		<temperature>-10.4</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="16">
+		<date>1966-01-17</date>
+		<temperature>-7.8</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="17">
+		<date>1966-01-18</date>
+		<temperature>-9.7</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="18">
+		<date>1966-01-19</date>
+		<temperature>-10.7</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="19">
+		<date>1966-01-20</date>
+		<temperature>-9.6</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="20">
+		<date>1966-01-21</date>
+		<temperature>-7.2</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="21">
+		<date>1966-01-22</date>
+		<temperature>-6.9</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="22">
+		<date>1966-01-23</date>
+		<temperature>-0.9</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="23">
+		<date>1966-01-24</date>
+		<temperature>0.1</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="24">
+		<date>1966-01-25</date>
+		<temperature>-3.2</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="25">
+		<date>1966-01-26</date>
+		<temperature>-4.3</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="26">
+		<date>1966-01-27</date>
+		<temperature>-8.4</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="27">
+		<date>1966-01-28</date>
+		<temperature>-8.9</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="28">
+		<date>1966-01-29</date>
+		<temperature>-4.7</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="29">
+		<date>1966-01-30</date>
+		<temperature>-4.0</temperature>
+		<quality>0</quality>
+	</row>
+	<row id="30">
+		<date>1966-01-31</date>
+		<temperature>1.1</temperature>
+		<quality>0</quality>
+	</row>
+</data>

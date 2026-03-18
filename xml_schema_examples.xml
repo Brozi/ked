@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Examples>
+	<stringValid1>Hello</stringValid1>
+	<stringValid2>XML &amp; Schema</stringValid2>
+	<stringValid3>123 abc</stringValid3>
+	<stringInvalid1></stringInvalid1>
+
+	<normalizedStringValid1>Line one</normalizedStringValid1>
+	<normalizedStringValid2>Tab removed</normalizedStringValid2>
+	<normalizedStringValid3>  Trimmed </normalizedStringValid3>
+	<normalizedStringInvalid1>Line
+		Break</normalizedStringInvalid1>
+	<normalizedStringInvalid2>CarriageReturn</normalizedStringInvalid2>
+
+	<tokenValid1>tokenized string</tokenValid1>
+	<tokenValid2>no-multiple-spaces</tokenValid2>
+	<tokenValid3>a_b_c</tokenValid3>
+	<tokenInvalid1> multiple  spaces </tokenInvalid1>
+	<tokenInvalid2>	TabsNotAllowed</tokenInvalid2>
+
+	<languageValid1>en</languageValid1>
+	<languageValid2>pl</languageValid2>
+	<languageValid3>en-US</languageValid3>
+	<languageInvalid1>english</languageInvalid1>
+	<languageInvalid2>123</languageInvalid2>
+
+	<NameValid1>ValidName</NameValid1>
+	<NameValid2>_Underscore</NameValid2>
+	<NameValid3>Name123</NameValid3>
+	<NameInvalid1>123StartWithDigit</NameInvalid1>
+	<NameInvalid2>Has Space</NameInvalid2>
+
+	<NCNameValid1>NCName</NCNameValid1>
+	<NCNameValid2>_NC_Name</NCNameValid2>
+	<NCNameValid3>NC123</NCNameValid3>
+	<NCNameInvalid1>:colonStart</NCNameInvalid1>
+	<NCNameInvalid2>prefix:name</NCNameInvalid2>
+
+	<IDValid1>id1</IDValid1>
+	<IDValid2>uniqueID</IDValid2>
+	<IDValid3>_id_</IDValid3>
+	<IDInvalid1>1startWithDigit</IDInvalid1>
+	<IDInvalid2>has space</IDInvalid2>
+
+	<dateValid1>2025-05-07</dateValid1>
+	<dateValid2>2000-01-01</dateValid2>
+	<dateValid3>1999-12-31Z+01:00</dateValid3>
+	<dateInvalid1>07-05-2025</dateInvalid1>
+	<dateInvalid2>2025/05/07</dateInvalid2>
+
+	<timeValid1>13:45:30</timeValid1>
+	<timeValid2>00:00:00</timeValid2>
+	<timeValid3>23:59:59</timeValid3>
+	<timeInvalid1>25:00:00</timeInvalid1>
+	<timeInvalid2>13:60:00</timeInvalid2>
+
+	<dateTimeValid1>2025-05-07T13:45:30</dateTimeValid1>
+	<dateTimeValid2>2000-01-01T00:00:00</dateTimeValid2>
+	<dateTimeValid3>1999-12-31T23:59:59</dateTimeValid3>
+	<dateTimeInvalid1>2025-05-07 13:45:30</dateTimeInvalid1>
+	<dateTimeInvalid2>13:45:30 2025-05-07</dateTimeInvalid2>
+
+	<gYearValid1>2025</gYearValid1>
+	<gYearValid2>1999</gYearValid2>
+	<gYearValid3>0001</gYearValid3>
+	<gYearInvalid1>99</gYearInvalid1>
+	<gYearInvalid2>20-25</gYearInvalid2>
+
+	<gYearMonthValid1>2025-05</gYearMonthValid1>
+	<gYearMonthValid2>1999-12</gYearMonthValid2>
+	<gYearMonthValid3>0001-01</gYearMonthValid3>
+	<gYearMonthInvalid1>2025/05</gYearMonthInvalid1>
+	<gYearMonthInvalid2>05-2025</gYearMonthInvalid2>
+
+	<gMonthValid1>--05</gMonthValid1>
+	<gMonthValid2>--12</gMonthValid2>
+	<gMonthValid3>--01</gMonthValid3>
+	<gMonthInvalid1>05</gMonthInvalid1>
+	<gMonthInvalid2>--13</gMonthInvalid2>
+
+	<gMonthDayValid1>--05-07</gMonthDayValid1>
+	<gMonthDayValid2>--12-25</gMonthDayValid2>
+	<gMonthDayValid3>--01-01</gMonthDayValid3>
+	<gMonthDayInvalid1>05-07</gMonthDayInvalid1>
+	<gMonthDayInvalid2>--13-01</gMonthDayInvalid2>
+
+	<gDayValid1>---07</gDayValid1>
+	<gDayValid2>---31</gDayValid2>
+	<gDayValid3>---01</gDayValid3>
+	<gDayInvalid1>07</gDayInvalid1>
+	<gDayInvalid2>---32</gDayInvalid2>
+
+	<booleanValid1>true</booleanValid1>
+	<booleanValid2>false</booleanValid2>
+	<booleanValid3>1</booleanValid3>
+	<booleanInvalid1>yes</booleanInvalid1>
+	<booleanInvalid2>no</booleanInvalid2>
+
+	<base64BinaryValid1>SGVsbG8=</base64BinaryValid1>
+	<base64BinaryValid2>UHl0aG9u</base64BinaryValid2>
+	<base64BinaryValid3>VGhpcyBpcyB0ZXh0</base64BinaryValid3>
+	<base64BinaryInvalid1>!!invalid==</base64BinaryInvalid1>
+	<base64BinaryInvalid2>12345</base64BinaryInvalid2>
+
+	<hexBinaryValid1>4A6F686E</hexBinaryValid1>
+	<hexBinaryValid2>48656C6C6F</hexBinaryValid2>
+	<hexBinaryValid3>ABCDEF1234</hexBinaryValid3>
+	<hexBinaryInvalid1>XYZ123</hexBinaryInvalid1>
+	<hexBinaryInvalid2>123G</hexBinaryInvalid2>
+
+	<anyURIValid1>http://example.com</anyURIValid1>
+	<anyURIValid2>mailto:info@example.com</anyURIValid2>
+	<anyURIValid3>ftp://ftp.example.com</anyURIValid3>
+	<anyURIInvalid1>htp://baduri</anyURIInvalid1>
+	<anyURIInvalid2>://missing</anyURIInvalid2>
+
+	<QNameValid1>x:name</QNameValid1>
+	<QNameValid2>ns:element</QNameValid2>
+	<QNameValid3>p:prop</QNameValid3>
+	<QNameInvalid1>:colonStart</QNameInvalid1>
+	<QNameInvalid2>name with space</QNameInvalid2>
+</Examples>

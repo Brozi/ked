@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<timetable>
+    <class id="1" special="true">
+        <name>Komputerowa ekstrakcja danych</name> <!-- Komentarz -->
+        <type>ćwiczenia</type>
+        <major>Informatyka społeczna</major>
+        <semester>4</semester>
+        <group>3</group>
+        <start_hour>13:00</start_hour>
+        <end_hour>14:30</end_hour>
+        <room>318</room>
+    </class>
+    <class id="2">
+        <name>Komputerowa ekstrakcja danych</name>
+        <type>ćwiczenia</type>
+        <major>Informatyka społeczna</major>
+        <semester>4</semester>
+        <group>2</group>
+        <start_hour>15:30</start_hour>
+        <end_hour>17:00</end_hour>
+        <room>318</room>
+    </class>
+    <class id="3">
+        <name>Filozofia kultury</name>
+        <type>wykład</type>
+        <major>Kulturoznawstwo</major>
+        <semester>2</semester>
+        <group>1</group>
+        <start_hour>12:10</start_hour>
+        <end_hour>13:40</end_hour>
+        <room>117</room>
+    </class>
+    <class id="4">
+        <name>Komputerowa ekstrakcja danych</name>
+        <type>ćwiczenia</type>
+        <major>Informatyka społeczna</major>
+        <semester>4</semester>
+        <group>1</group>
+        <start_hour>14:30</start_hour>
+        <end_hour>16:00</end_hour>
+        <room>318</room>
+    </class>
+    <info a="default"/>
+</timetable>
