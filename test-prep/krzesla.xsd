@@ -42,14 +42,14 @@
                 <xs:element name="bedroom">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="wardrobe" type="wardrobeType" minOccurs="unbounded"/>
+                            <xs:element name="wardrobe" type="wardrobeType" minOccurs="1"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="hall">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="wardrobe" type="wardrobeType" minOccurs="unbounded"/>
+                            <xs:element name="wardrobe" type="wardrobeType" minOccurs="1"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
