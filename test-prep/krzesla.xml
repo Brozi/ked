@@ -1,12 +1,12 @@
-<?xml version="1.0" endcoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <flat>
-  <dining_room>
+  <diningRoom>
     <chair color="Red"/>
     <chair color="Red"/>
     <chair color="Red"/>
     <chair color="Red"/>
     <table color="Black"/>
-  </dining_room>
+  </diningRoom>
   <bedroom>
     <wardrobe color="White">
       <door id="1"/>
