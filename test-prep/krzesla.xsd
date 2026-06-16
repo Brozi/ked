@@ -9,5 +9,11 @@
       </xs:restriction>
     </xs:simpleType>
 
+    <xs:complexType name="doorType">
+        
+    </xs:complexType>
+
+    
+
     
 
